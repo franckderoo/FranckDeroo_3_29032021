@@ -1,0 +1,21 @@
+body {
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", cursive;
+}
+figure img {
+  height: 150px;
+  width: 200px;
+}
+.img_backg {
+  height: 120px;
+  width: 120px;
+}
+.card {
+  background-color: rgb(199, 30, 30);
+  border: radius 5px;
+  display: flex;
+}
+.operation {
+  background-color: rgb(97, 104, 107);
+  border: 1px black solid;
+}
