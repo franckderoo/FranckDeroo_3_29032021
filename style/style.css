@@ -6,16 +6,9 @@ figure img {
   height: 150px;
   width: 200px;
 }
-.img_backg {
+.img_backg img {
   height: 120px;
   width: 120px;
 }
-.card {
-  background-color: rgb(199, 30, 30);
-  border: radius 5px;
-  display: flex;
-}
-.operation {
-  background-color: rgb(97, 104, 107);
-  border: 1px black solid;
-}
+
+/*teste des mise en page */
