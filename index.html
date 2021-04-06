@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <script
       src="https://kit.fontawesome.com/165f3ca619.js"
       crossorigin="anonymous"
@@ -22,17 +22,19 @@
   </head>
   <body>
     <header>
-      <div><img class="" src="images/logo/ohmyfood@2x.svg" alt="logo" /></div>
+      <div class="logo">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo" />
+      </div>
     </header>
     <div class="wrapper">
       <div class="local_search">
         <form method="post" action="#">
           <i class="fas fa-map-marker-alt"></i>
-          <input type="text" name="search" placeholder="Paris,Belleville" />
+          <input type="text" name="search" placeholder="Paris, Belleville" />
         </form>
       </div>
-      <div>
-        <h2>Réservez le menu qui vous convient</h2>
+      <div class="wrapper_info">
+        <h1>Réservez le menu qui vous convient</h1>
         <p>
           Découvrez des restaurant d'excepetion, séléctionneés par nos soins.
         </p>
@@ -61,7 +63,7 @@
       <section class="liste_restaurant">
         <h2>restaurant</h2>
         <article class="restaurant">
-          <a href="restaurant/Lapalettedugoût.html">
+          <a href="restaurant/la-palette-du-gout.html">
             <figure class="rest_card">
               <img
                 src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -79,7 +81,7 @@
           </a>
         </article>
         <article class="restaurant">
-          <a href="restaurant/Lanoteenchantée.html">
+          <a href="restaurant/la-note-enchantee.html">
             <figure class="rest_card">
               <img
                 src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
@@ -97,7 +99,7 @@
           </a>
         </article>
         <article class="restaurant">
-          <a href="restaurant/Àlafrançaise.html">
+          <a href="restaurant/a-la-française.html">
             <figure class="rest_card">
               <img
                 src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -114,7 +116,7 @@
           </a>
         </article>
         <article class="restaurant">
-          <a href="restaurant/Ledélicedessens.html">
+          <a href="restaurant/le-delice-des-sens.html">
             <figure class="rest_card">
               <img
                 src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -143,8 +145,6 @@
         <li>
           <i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a>
         </li>
-      </ul>
-      <ul class="footer_nav">
         <li><a href="#">Mentions légales</a></li>
         <li><a href="mailto:test@test.local">Contact</a></li>
       </ul>
