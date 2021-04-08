@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 2em;
+  padding: 1.5em 1.5em;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 1em 1em 2em;
+  box-shadow: $ombre;
+  background: linear-gradient(to bottom, $color-secondary, $color-primary);
+}
+.card {
+  border-radius: 15px 15px 15px 15px;
+  margin: 1.5em 1em;
+  background-color: $color-fourtiary;
+  border: none;
+  box-shadow: $ombre;
+  padding: 0.5em 0;
+}

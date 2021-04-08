@@ -1,0 +1,11 @@
+@mixin font1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+@mixin operat-font {
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
