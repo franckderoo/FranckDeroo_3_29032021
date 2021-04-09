@@ -9,3 +9,10 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
 }
+@mixin heart {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  font-size: 24px;
+  margin-right: 1em;
+}

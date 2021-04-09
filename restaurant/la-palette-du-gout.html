@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <script
       src="https://kit.fontawesome.com/165f3ca619.js"
       crossorigin="anonymous"
@@ -22,8 +22,10 @@
   </head>
   <body>
     <header>
-      <a href="../index.html"> <i class="fas fa-arrow-left"></i></a>
-      <img src="../images/logo/ohmyfood@2x.svg" alt="logo" />
+      <div class="header_logo logo">
+        <a href="../index.html"> <i class="fas fa-arrow-left"></i> </a>
+        <img src="../images/logo/ohmyfood@2x.svg" alt="logo" />
+      </div>
     </header>
     <div class="img_backg">
       <img
@@ -34,7 +36,8 @@
     <section class="menu">
       <div class="menu_header">
         <h2>la palette du goût</h2>
-        <i class="far fa-heart"></i>
+        <i class="far fa-heart vide"></i>
+        <i class="fas fa-heart plein"></i>
       </div>
       <article class="menu_list">
         <h3><span class="BB-green">entr</span>ées</h3>
@@ -120,24 +123,22 @@
           </div>
         </div>
       </article>
-      <button class="validate-btn btn">Commander</button>
+      <div class="validate-btn"><button class="btn">Commander</button></div>
     </section>
     <footer>
-      <div class="footer_logo">
-        <img src="../images/logo/ohmyfood@2x.svg" alt="" />
+      <div class="foot_cont-bck">
+        <div class="footer_logo">ohmyfood</div>
+        <p>
+          <i class="fas fa-utensils mr10"></i
+          ><a href="#">Proposer un restaurant</a>
+        </p>
+        <p>
+          <i class="fas fa-hands-helping"></i>
+          <a href="#">Devenir partenaire</a>
+        </p>
+        <p><a href="#">Mentions légales</a></p>
+        <p><a href="mailto:test@test.local">Contact</a></p>
       </div>
-      <ul class="footer_nav-ico">
-        <li>
-          <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
-        </li>
-        <li>
-          <i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a>
-        </li>
-      </ul>
-      <ul class="footer_nav">
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:test@test.local">Contact</a></li>
-      </ul>
     </footer>
   </body>
 </html>
