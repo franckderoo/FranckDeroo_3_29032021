@@ -1,0 +1,24 @@
+.local_search {
+  background-color: $color_grey;
+  text-align: center;
+  border-top: 2px solid #d7d9d9;
+  padding: 1em;
+  color: black;
+  form {
+    margin-left: 2em;
+  }
+  i {
+    margin-right: 0.5em;
+  }
+  input {
+    border: none;
+    font-size: medium;
+    font-family: "Roboto";
+    width: 150px;
+    background-color: transparent;
+  }
+}
+::placeholder {
+  color: black;
+  font-weight: 600;
+}
