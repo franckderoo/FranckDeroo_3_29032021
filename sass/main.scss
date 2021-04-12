@@ -234,12 +234,27 @@ footer {
   }
 }
 .card {
+  position: relative;
   border-radius: 15px 15px 15px 15px;
   margin: 1.5em 1em;
   box-shadow: $ombre;
   cursor: pointer;
   background-color: white;
   padding: 1em;
+
+  &:hover .check,
+  .left {
+    transform: scaleX(1);
+  }
+  &:hover .fa-check {
+    transform: rotate(360deg);
+  }
+  &:hover .price {
+    transform: translate(-52px);
+  }
+  &:hover .sub_title {
+    width: 70%;
+  }
   h3 {
     margin-bottom: 0;
   }
@@ -249,11 +264,19 @@ footer {
   align-items: baseline;
   justify-content: space-between;
   font-size: 0.95em;
+  .sub_title {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 88%;
+    transition: 1s;
+  }
   :first-of-type + p {
     font-weight: bold;
-  }
-  p {
-    margin: 0 0;
+    margin: 0;
+
+    transition: 1s;
   }
 }
 .validate-btn {
@@ -261,7 +284,26 @@ footer {
   justify-content: center;
 }
 .check {
-  width: 25%;
+  transform: scaleX(0);
+  transform-origin: right;
+  width: 15%;
   height: 73px;
   background-color: $color-green;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+.fa-check {
+  position: absolute;
+  border-radius: 100%;
+  background-color: white;
+  padding: 0.3em;
+  color: $color-green;
+  transition: 1s;
 }

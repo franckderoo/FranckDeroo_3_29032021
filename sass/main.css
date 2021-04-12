@@ -345,6 +345,7 @@ footer .mr10 {
 }
 
 .card {
+  position: relative;
   border-radius: 15px 15px 15px 15px;
   margin: 1.5em 1em;
   -webkit-box-shadow: 0px 6px 10px #c0c0c0;
@@ -352,6 +353,26 @@ footer .mr10 {
   cursor: pointer;
   background-color: white;
   padding: 1em;
+}
+
+.card:hover .check,
+.card .left {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.card:hover .fa-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.card:hover .price {
+  -webkit-transform: translate(-52px);
+          transform: translate(-52px);
+}
+
+.card:hover .sub_title {
+  width: 70%;
 }
 
 .card h3 {
@@ -371,12 +392,21 @@ footer .mr10 {
   font-size: 0.95em;
 }
 
-.card_info :first-of-type + p {
-  font-weight: bold;
+.card_info .sub_title {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 88%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.card_info p {
-  margin: 0 0;
+.card_info :first-of-type + p {
+  font-weight: bold;
+  margin: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .validate-btn {
@@ -387,8 +417,40 @@ footer .mr10 {
 }
 
 .check {
-  width: 25%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  width: 15%;
   height: 73px;
   background-color: #99e2d0;
+  border-radius: 0px 10px 10px 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.fa-check {
+  position: absolute;
+  border-radius: 100%;
+  background-color: white;
+  padding: 0.3em;
+  color: #99e2d0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=main.css.map */
