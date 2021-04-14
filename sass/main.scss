@@ -131,9 +131,7 @@ a {
   font-size: 25px;
   opacity: 0;
   &:hover {
-    opacity: 1;
-    color: $color-primary;
-    transition: 2s;
+    @include lingrad;
     cursor: pointer;
   }
 }
@@ -165,11 +163,71 @@ footer {
   font-size: 1.3em;
   padding-bottom: 10px;
 }
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background: $color-fourtiary;
+  animation: blind 4s;
+  transform-origin: left;
+  .com {
+    @include lingrad;
+    font-family: "Shrikhand", cursive;
+    font-size: 3em;
+    opacity: 0;
+  }
+}
+.ap1 {
+  animation: wait 3s;
+}
+.ap2 {
+  animation: wait 3s 1s;
+}
+.ap3 {
+  animation: wait 3s 2s;
+}
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blind {
+  from {
+    width: 100%;
+
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+
+    opacity: 1;
+  }
+}
+
 /* pages 2a5*/
 .header_logo {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
   margin-left: 1em;
 }
 .img_backg img {
@@ -202,10 +260,12 @@ footer {
 .menu_list > h3 {
   text-transform: uppercase;
   margin-left: 1em;
-  span {
-    border-bottom: 3px solid $color-green;
-  }
+  padding: 3px 0;
 }
+.BB-green {
+  border-bottom: 3px solid $color-green;
+}
+
 .card {
   position: relative;
   border-radius: 15px 15px 15px 15px;
@@ -215,17 +275,20 @@ footer {
   background-color: white;
   padding: 1em;
 
-  &:hover .check {
+  &:active .check {
     transform: scaleX(1);
   }
-  &:hover .fa-check {
+  &:active .fa-check {
     transform: rotate(360deg);
   }
-  &:hover .price {
+  &:active .price {
     transform: translate(-52px);
   }
-  &:hover .sub_title {
+  &:active .sub_title {
     width: 75%;
+  }
+  &:active h3 {
+    width: 90%;
   }
 }
 .card_info {
@@ -245,6 +308,9 @@ footer {
     font-weight: bold;
     margin: 0;
     transition: 1s;
+    background-color: #fff;
+    padding-right: 1em;
+    margin-right: -16px;
   }
 }
 .validate-btn {
@@ -268,10 +334,33 @@ footer {
   transition: transform 1s;
 }
 .fa-check {
-  position: absolute;
   border-radius: 100%;
   background-color: white;
   padding: 0.3em;
   color: $color-green;
   transition: 1s;
+}
+@keyframes fade {
+  from {
+    transform: translateY(200px);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+.fade1 {
+  animation: fade 2s;
+}
+.fade2 {
+  opacity: 0;
+  animation: fade 2s 2s both;
+}
+.fade3 {
+  opacity: 0;
+  animation: fade 2s 3s both;
 }

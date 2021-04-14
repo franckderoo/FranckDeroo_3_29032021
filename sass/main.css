@@ -250,7 +250,11 @@ a {
 
 .plein:hover {
   opacity: 1;
-  color: #9356dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   -webkit-transition: 2s;
   transition: 2s;
   cursor: pointer;
@@ -288,6 +292,117 @@ footer .mr10 {
   padding-bottom: 10px;
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  background: #eff1f1;
+  -webkit-animation: blind 4s;
+          animation: blind 4s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.loader .com {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-family: "Shrikhand", cursive;
+  font-size: 3em;
+  opacity: 0;
+}
+
+.ap1 {
+  -webkit-animation: wait 3s;
+          animation: wait 3s;
+}
+
+.ap2 {
+  -webkit-animation: wait 3s 1s;
+          animation: wait 3s 1s;
+}
+
+.ap3 {
+  -webkit-animation: wait 3s 2s;
+          animation: wait 3s 2s;
+}
+
+@-webkit-keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blind {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blind {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 /* pages 2a5*/
 .header_logo {
   display: -webkit-box;
@@ -296,7 +411,7 @@ footer .mr10 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 70%;
   margin-left: 1em;
 }
 
@@ -340,9 +455,10 @@ footer .mr10 {
 .menu_list > h3 {
   text-transform: uppercase;
   margin-left: 1em;
+  padding: 3px 0;
 }
 
-.menu_list > h3 span {
+.BB-green {
   border-bottom: 3px solid #99e2d0;
 }
 
@@ -357,23 +473,27 @@ footer .mr10 {
   padding: 1em;
 }
 
-.card:hover .check {
+.card:active .check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.card:hover .fa-check {
+.card:active .fa-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.card:hover .price {
+.card:active .price {
   -webkit-transform: translate(-52px);
           transform: translate(-52px);
 }
 
-.card:hover .sub_title {
+.card:active .sub_title {
   width: 75%;
+}
+
+.card:active h3 {
+  width: 90%;
 }
 
 .card_info {
@@ -404,6 +524,9 @@ footer .mr10 {
   margin: 0;
   -webkit-transition: 1s;
   transition: 1s;
+  background-color: #fff;
+  padding-right: 1em;
+  margin-right: -16px;
 }
 
 .validate-btn {
@@ -442,12 +565,54 @@ footer .mr10 {
 }
 
 .fa-check {
-  position: absolute;
   border-radius: 100%;
   background-color: white;
   padding: 0.3em;
   color: #99e2d0;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade1 {
+  -webkit-animation: fade 2s;
+          animation: fade 2s;
+}
+
+.fade2 {
+  opacity: 0;
+  -webkit-animation: fade 2s 2s both;
+          animation: fade 2s 2s both;
+}
+
+.fade3 {
+  opacity: 0;
+  -webkit-animation: fade 2s 3s both;
+          animation: fade 2s 3s both;
 }
 /*# sourceMappingURL=main.css.map */

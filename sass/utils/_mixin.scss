@@ -16,3 +16,11 @@
   font-size: 24px;
   margin-right: 1em;
 }
+@mixin lingrad {
+  opacity: 1;
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 2s;
+}
