@@ -360,7 +360,7 @@ footer {
   animation: fade 2s 3s both;
 }
 /* medias queri*/
-@media #{$medium} {
+@media #{$small} {
   body {
     margin: auto;
     max-width: 1440px;
@@ -376,9 +376,8 @@ footer {
   }
   .wrapper {
     width: 50%;
-    height: 335px;
+
     .wrapper_info {
-      height: 248px;
       padding: 1em 3em;
     }
   }
@@ -386,7 +385,7 @@ footer {
     margin: 0;
     width: 50%;
     border: 2px solid #d7d9d9;
-
+    margin-bottom: 1em;
     h2 {
       background-color: $color_grey;
       text-align: center;
@@ -404,6 +403,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 1024px;
+
     article {
       width: 46%;
     }
@@ -443,9 +445,33 @@ footer {
   }
 }
 @media #{$large} {
-  .container,
-  .liste_restaurant {
-    max-width: 1024px;
+  .container {
+    display: block;
     margin: auto;
+    max-width: 1024px;
+    .wrapper {
+      width: 100%;
+    }
+  }
+  .operation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    border: none;
+    margin: 30px 0px;
+    h2 {
+      max-width: 1024px;
+      width: 100%;
+      position: absolute;
+      top: -35px;
+      background-color: transparent;
+    }
+  }
+
+  .operation_step {
+    width: 29%;
+    margin-bottom: 1em;
   }
 }

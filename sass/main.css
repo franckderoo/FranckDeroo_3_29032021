@@ -626,16 +626,15 @@ footer .mr10 {
   }
   .wrapper {
     width: 50%;
-    height: 335px;
   }
   .wrapper .wrapper_info {
-    height: 248px;
     padding: 1em 3em;
   }
   .operation {
     margin: 0;
     width: 50%;
     border: 2px solid #d7d9d9;
+    margin-bottom: 1em;
   }
   .operation h2 {
     background-color: #e7e7e7;
@@ -659,6 +658,8 @@ footer .mr10 {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: auto;
+    max-width: 1024px;
   }
   .liste_restaurant article {
     width: 46%;
@@ -704,10 +705,38 @@ footer .mr10 {
 }
 
 @media only screen and (min-width: 1024px) {
-  .container,
-  .liste_restaurant {
-    max-width: 1024px;
+  .container {
+    display: block;
     margin: auto;
+    max-width: 1024px;
+  }
+  .container .wrapper {
+    width: 100%;
+  }
+  .operation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    border: none;
+    margin: 30px 0px;
+  }
+  .operation h2 {
+    max-width: 1024px;
+    width: 100%;
+    position: absolute;
+    top: -35px;
+    background-color: transparent;
+  }
+  .operation_step {
+    width: 29%;
+    margin-bottom: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
