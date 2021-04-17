@@ -477,6 +477,7 @@ footer .mr10 {
 .card:active .price {
   -webkit-transform: translate(-52px);
           transform: translate(-52px);
+  margin-right: -16px;
 }
 
 .card:active .sub_title {
@@ -516,8 +517,7 @@ footer .mr10 {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: #fff;
-  padding-right: 1em;
-  margin-right: -16px;
+  padding-left: 1em;
 }
 
 .validate-btn {
@@ -532,7 +532,7 @@ footer .mr10 {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  width: 15%;
+  width: 45px;
   height: 73px;
   background-color: #99e2d0;
   border-radius: 0px 10px 10px 0px;
@@ -635,19 +635,16 @@ footer .mr10 {
   .operation {
     margin: 0;
     width: 50%;
-    border-left: 2px solid #d7d9d9;
-    background-color: #eff1f1;
+    border: 2px solid #d7d9d9;
   }
   .operation h2 {
     background-color: #e7e7e7;
     text-align: center;
-    border-top: 2px solid #d7d9d9;
     padding: 0.5em;
     margin-top: 0;
   }
   .operation .operation_step {
     margin: 19px 22px;
-    background-color: white;
   }
   .liste_restaurant {
     position: relative;
@@ -672,19 +669,17 @@ footer .mr10 {
   }
   /* resp page */
   .menu {
-    padding: 50px 50px 0px 50px;
+    padding: 20px 10px 0px 10px;
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 650px) {
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
   .menu {
-    margin: -50px 15% 0px 15%;
-  }
-}
-
-@media only screen and (min-width: 651px) and (max-width: 1100px) {
-  .menu {
-    margin: -50px 20% 0px 20%;
+    max-width: 600px;
+    margin-top: -50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -701,7 +696,7 @@ footer .mr10 {
             justify-content: space-between;
   }
   .menu_list {
-    margin-left: -1em;
+    width: 33%;
   }
   .menu_header {
     margin-bottom: 1em;
