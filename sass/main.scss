@@ -129,6 +129,8 @@ a {
   &:hover {
     @include lingrad;
     cursor: pointer;
+    transition: 3s;
+    opacity: 1;
   }
 }
 
@@ -162,7 +164,6 @@ footer {
 }
 .loader {
   position: absolute;
-  z-index: 1;
   top: 0;
   left: 0;
   width: 0%;
@@ -178,7 +179,7 @@ footer {
     @include lingrad;
     font-family: "Shrikhand", cursive;
     font-size: 3em;
-    opacity: 1;
+    transition: 2s;
   }
 }
 .ap1 {
