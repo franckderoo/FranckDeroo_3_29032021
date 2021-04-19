@@ -165,7 +165,6 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
-  bottom: 0;
   width: 0%;
   height: 100%;
   display: flex;
@@ -179,7 +178,7 @@ footer {
     @include lingrad;
     font-family: "Shrikhand", cursive;
     font-size: 3em;
-    opacity: 0;
+    opacity: 1;
   }
 }
 .ap1 {
