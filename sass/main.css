@@ -289,7 +289,7 @@ footer .mr10 {
 
 .loader {
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 0%;
@@ -305,8 +305,8 @@ footer .mr10 {
           align-items: center;
   opacity: 0;
   background: #eff1f1;
-  -webkit-animation: blind 4s;
-          animation: blind 4s;
+  -webkit-animation: blind 3s;
+          animation: blind 3s;
 }
 
 .loader .com {
@@ -317,23 +317,22 @@ footer .mr10 {
   color: transparent;
   font-family: "Shrikhand", cursive;
   font-size: 3em;
-  z-index: 2;
-  position: relative;
+  opacity: 0;
 }
 
 .ap1 {
-  -webkit-animation: wait 3s;
-          animation: wait 3s;
+  -webkit-animation: wait 2s;
+          animation: wait 2s;
 }
 
 .ap2 {
-  -webkit-animation: wait 3s 1s;
-          animation: wait 3s 1s;
+  -webkit-animation: wait 2s 1s;
+          animation: wait 2s 1s;
 }
 
 .ap3 {
-  -webkit-animation: wait 3s 2s;
-          animation: wait 3s 2s;
+  -webkit-animation: wait 2s 2s;
+          animation: wait 2s 2s;
 }
 
 @-webkit-keyframes wait {

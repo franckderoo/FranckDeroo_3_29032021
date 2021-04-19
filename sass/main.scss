@@ -164,7 +164,7 @@ footer {
 }
 .loader {
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 0%;
@@ -174,24 +174,23 @@ footer {
   align-items: center;
   opacity: 0;
   background: $color-fourtiary;
-  animation: blind 4s;
+  animation: blind 3s;
 
   .com {
     @include lingrad;
     font-family: "Shrikhand", cursive;
     font-size: 3em;
-    z-index: 2;
-    position: relative;
+    opacity: 0;
   }
 }
 .ap1 {
-  animation: wait 3s;
+  animation: wait 2s;
 }
 .ap2 {
-  animation: wait 3s 1s;
+  animation: wait 2s 1s;
 }
 .ap3 {
-  animation: wait 3s 2s;
+  animation: wait 2s 2s;
 }
 @keyframes wait {
   0% {
