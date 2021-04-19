@@ -289,6 +289,7 @@ footer .mr10 {
 
 .loader {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 0%;
@@ -306,8 +307,6 @@ footer .mr10 {
   background: #eff1f1;
   -webkit-animation: blind 4s;
           animation: blind 4s;
-  -webkit-transform-origin: left;
-          transform-origin: left;
 }
 
 .loader .com {
@@ -318,8 +317,8 @@ footer .mr10 {
   color: transparent;
   font-family: "Shrikhand", cursive;
   font-size: 3em;
-  -webkit-transition: 2s;
-  transition: 2s;
+  z-index: 2;
+  position: relative;
 }
 
 .ap1 {

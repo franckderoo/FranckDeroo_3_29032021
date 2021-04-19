@@ -164,6 +164,7 @@ footer {
 }
 .loader {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 0%;
@@ -174,12 +175,13 @@ footer {
   opacity: 0;
   background: $color-fourtiary;
   animation: blind 4s;
-  transform-origin: left;
+
   .com {
     @include lingrad;
     font-family: "Shrikhand", cursive;
     font-size: 3em;
-    transition: 2s;
+    z-index: 2;
+    position: relative;
   }
 }
 .ap1 {
