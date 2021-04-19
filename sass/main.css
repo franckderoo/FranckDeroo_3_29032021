@@ -7,14 +7,8 @@
   font-size: 1.05em;
   margin: 1em 1em 2em;
   -webkit-box-shadow: 0px 6px 10px #c0c0c0;
-  box-shadow: 0px 6px 10px #c0c0c0;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ff79da),
-    to(#9356dc)
-  );
+          box-shadow: 0px 6px 10px #c0c0c0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   cursor: pointer;
 }
@@ -85,7 +79,7 @@ a {
 
 .img_backg img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   max-height: 300px;
   width: 100%;
 }
@@ -95,11 +89,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo img {
@@ -134,12 +128,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-radius: 15px 15px 15px 15px;
   margin: 1.5em 1em;
   -webkit-box-shadow: 0px 6px 10px #c0c0c0;
-  box-shadow: 0px 6px 10px #c0c0c0;
+          box-shadow: 0px 6px 10px #c0c0c0;
   cursor: pointer;
   background-color: #eff1f1;
 }
@@ -147,7 +141,7 @@ a {
 .operation_step:hover {
   background-color: #e4d5f6;
   -webkit-box-shadow: 3px 10px 5px #c0c0c0;
-  box-shadow: 3px 10px 5px #c0c0c0;
+          box-shadow: 3px 10px 5px #c0c0c0;
 }
 
 .operation_step:hover .step {
@@ -189,8 +183,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .liste_restaurant h2 {
@@ -204,15 +198,15 @@ a {
 
 .restaurant .rest_card {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 220px;
   border-radius: 20px;
   margin: 0px;
   background-color: white;
   -webkit-box-shadow: 0px 6px 10px #c0c0c0;
-  box-shadow: 0px 6px 10px #c0c0c0;
+          box-shadow: 0px 6px 10px #c0c0c0;
 }
 
 .restaurant .rest_card img {
@@ -220,7 +214,7 @@ a {
   height: 69%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .rest_info-block {
@@ -250,13 +244,7 @@ a {
 
 .plein:hover {
   opacity: 1;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -311,28 +299,22 @@ footer .mr10 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   background: #eff1f1;
   -webkit-animation: blind 4s;
-  animation: blind 4s;
+          animation: blind 4s;
   -webkit-transform-origin: left;
-  transform-origin: left;
+          transform-origin: left;
 }
 
 .loader .com {
   opacity: 1;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -346,17 +328,17 @@ footer .mr10 {
 
 .ap1 {
   -webkit-animation: wait 3s;
-  animation: wait 3s;
+          animation: wait 3s;
 }
 
 .ap2 {
   -webkit-animation: wait 3s 1s;
-  animation: wait 3s 1s;
+          animation: wait 3s 1s;
 }
 
 .ap3 {
   -webkit-animation: wait 3s 2s;
-  animation: wait 3s 2s;
+          animation: wait 3s 2s;
 }
 
 @-webkit-keyframes wait {
@@ -418,15 +400,10 @@ footer .mr10 {
 }
 
 /* pages 2a5*/
-.header_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 65%;
-  margin-left: 1em;
+.header_logo i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .menu {
@@ -435,8 +412,8 @@ footer .mr10 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #eff1f1;
   padding-top: 1em;
   border-radius: 40px 40px 0 0;
@@ -476,7 +453,7 @@ footer .mr10 {
   border-radius: 15px 15px 15px 15px;
   margin: 1.5em 1em;
   -webkit-box-shadow: 0px 6px 10px #c0c0c0;
-  box-shadow: 0px 6px 10px #c0c0c0;
+          box-shadow: 0px 6px 10px #c0c0c0;
   cursor: pointer;
   background-color: white;
   padding: 1em;
@@ -484,17 +461,17 @@ footer .mr10 {
 
 .card:active .check {
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .card:active .fa-check {
   -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .card:active .price {
   -webkit-transform: translate(-52px);
-  transform: translate(-52px);
+          transform: translate(-52px);
   margin-right: -16px;
 }
 
@@ -511,11 +488,11 @@ footer .mr10 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 0.95em;
 }
 
@@ -541,15 +518,15 @@ footer .mr10 {
 .validate-btn {
   display: inherit;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .check {
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: right;
-  transform-origin: right;
+          transform-origin: right;
   width: 45px;
   height: 73px;
   background-color: #99e2d0;
@@ -562,11 +539,11 @@ footer .mr10 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -585,12 +562,12 @@ footer .mr10 {
 @-webkit-keyframes fade {
   from {
     -webkit-transform: translateY(200px);
-    transform: translateY(200px);
+            transform: translateY(200px);
     opacity: 0;
   }
   to {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
@@ -598,35 +575,51 @@ footer .mr10 {
 @keyframes fade {
   from {
     -webkit-transform: translateY(200px);
-    transform: translateY(200px);
+            transform: translateY(200px);
     opacity: 0;
   }
   to {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
 .fade1 {
   -webkit-animation: fade 2s;
-  animation: fade 2s;
+          animation: fade 2s;
 }
 
 .fade2 {
   opacity: 0;
   -webkit-animation: fade 2s 2s both;
-  animation: fade 2s 2s both;
+          animation: fade 2s 2s both;
 }
 
 .fade3 {
   opacity: 0;
   -webkit-animation: fade 2s 3s both;
-  animation: fade 2s 3s both;
+          animation: fade 2s 3s both;
 }
 
 /* medias queri*/
 @media only screen and (min-width: 768px) {
+  .header_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 65%;
+    margin-left: 1em;
+  }
+  .header_logo i {
+    position: relative;
+    top: auto;
+    right: auto;
+    font-size: 20px;
+  }
   body {
     margin: auto;
     max-width: 1440px;
@@ -669,13 +662,13 @@ footer .mr10 {
     padding: 4em 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: auto;
     max-width: 1024px;
   }
@@ -711,8 +704,8 @@ footer .mr10 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .menu_list {
     width: 33%;
@@ -736,10 +729,10 @@ footer .mr10 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     position: relative;
     width: 100%;
     border: none;
