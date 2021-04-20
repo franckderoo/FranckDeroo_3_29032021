@@ -283,10 +283,10 @@ footer {
     margin-right: -16px;
   }
   &:active .sub_title {
-    width: 75%;
+    width: 71%;
   }
   &:active h3 {
-    width: 90%;
+    width: 64%;
   }
 }
 .card_info {
@@ -385,31 +385,15 @@ footer {
       width: 300px;
     }
   }
-  .container {
-    display: flex;
-  }
-  .wrapper {
+  .wrapper_info p {
     width: 50%;
-
-    .wrapper_info {
-      padding: 1em 3em;
-    }
+    margin: auto;
   }
   .operation {
-    margin: 0;
-    width: 50%;
-    border: 2px solid #d7d9d9;
-    margin-bottom: 1em;
-    h2 {
-      background-color: $color_grey;
-      text-align: center;
-      padding: 0.5em;
-      margin-top: 0;
-    }
-    .operation_step {
-      margin: 19px 22px;
-    }
+    width: 400px;
+    margin: auto;
   }
+
   .liste_restaurant {
     position: relative;
     margin-top: 1em;
