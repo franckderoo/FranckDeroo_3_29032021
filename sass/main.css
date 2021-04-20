@@ -289,7 +289,7 @@ footer .mr10 {
 
 .loader {
   position: absolute;
-  z-index: 99;
+ 
   top: 0;
   left: 0;
   width: 0%;
@@ -318,7 +318,7 @@ footer .mr10 {
   font-family: "Shrikhand", cursive;
   font-size: 3em;
   opacity: 0;
-  z-index: 999;
+  
 }
 
 .ap1 {
