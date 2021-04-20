@@ -375,22 +375,22 @@ footer .mr10 {
 @-webkit-keyframes blind {
   from {
     width: 100%;
-    opacity: 1;
+    opacity: 0.99;
   }
   to {
     width: 100%;
-    opacity: 1;
+    opacity: 0.99;
   }
 }
 
 @keyframes blind {
   from {
     width: 100%;
-    opacity: 1;
+    opacity: 0.99;
   }
   to {
     width: 100%;
-    opacity: 1;
+    opacity: 0.99;
   }
 }
 
