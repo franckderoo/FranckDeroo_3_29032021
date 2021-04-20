@@ -245,7 +245,6 @@ a {
 .plein:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -312,7 +311,6 @@ footer .mr10 {
 .loader .com {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Shrikhand", cursive;
