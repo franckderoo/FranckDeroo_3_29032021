@@ -284,6 +284,7 @@ footer {
   }
   &:active .sub_title {
     width: 71%;
+    white-space: nowrap;
   }
   &:active h3 {
     width: 64%;
@@ -297,7 +298,7 @@ footer {
   .sub_title {
     margin: 0;
     text-overflow: ellipsis;
-    white-space: nowrap;
+
     overflow: hidden;
     max-width: 88%;
     transition: 1s;

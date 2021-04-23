@@ -470,6 +470,7 @@ footer .mr10 {
 
 .card:active .sub_title {
   width: 71%;
+  white-space: nowrap;
 }
 
 .card:active h3 {
@@ -492,7 +493,6 @@ footer .mr10 {
 .card_info .sub_title {
   margin: 0;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   max-width: 88%;
   -webkit-transition: 1s;
